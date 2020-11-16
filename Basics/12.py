@@ -24,8 +24,10 @@ print(c,d)
 s='ab12c59p77dq'
 digits=[int(i) for i in s if '0'<=i<='9']
 digits.sort()
+print(digits)
 digits.sort(reverse=True)
 print(digits)
+
 
 #split; we will get strings
 print('Please insert elements of the list using spacebar:')
@@ -33,13 +35,13 @@ s=input()
 a=s.split()
 print(a)
 
-#!!! split: we will get numbers
+#split: we will get numbers
 a=input('Please insert elements of the list using spacebar: ').split()
 for i in range(len(a)):
     a[i]=int(a[i])
 print(a)
 
-#!!! Via generator, v skobkah ukazivaem po kakomu razdelitjelu mi razdeljajem !!!
+#Via generator, v skobkah ukazivaem po kakomu razdelitjelu mi razdeljajem !!!
 a=[int(s) for s in input('Please insert elements of the list using spacebar: ').split()]
 print(a)
 
@@ -50,7 +52,6 @@ print(''.join(a))
 a=['red', 'green', 'blue']
 print(', '.join(a))
 
-#!!!
 b=[1,2,5]
 print(' '.join([str(i) for i in b]))
 
@@ -70,6 +71,7 @@ print(numbers)
 #Hotim poluchitj chjotnije chisla
 print('Please insert elements of the list using spacebar: ')
 a=input().split()
+print(a)
 print('Even numbers from the list:')
 for i in range(0,len(a)): #ot index 0
     if int(a[i])%2==0:
@@ -89,3 +91,12 @@ print('Even indexes contain:')
 for i in range(0,len(a),2): 
         print(a[i])
         
+print('Please insert elements of the list using spacebar: ')
+a=input().split()
+print('Odd indexes contain:')
+for i in range(1,len(a),2): 
+        print(a[i])
+
+a=input().split()
+print('Odd indexes contain:')
+a[1::2]
