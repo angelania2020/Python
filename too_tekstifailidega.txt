@@ -1,0 +1,4 @@
+https://metanit.com/python/tutorial/4.2.php
+https://pep8.ru/doc/tutorial-3.1/7.html
+http://pythonicway.com/python-fileio
+https://pythonworld.ru/tipy-dannyx-v-python/fajly-rabota-s-fajlami.html
