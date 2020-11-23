@@ -14,7 +14,7 @@ for i in range(1,11):
 for i in range(1,11):
     print(f'Таблица умножения на {i}')
     for j in range(1,11):
-        print(f'{i}x{j}={i*j}')
+        print(f'{i}x{j}={i*j}') #Будет с новой строки
     print('')
         
 #?'{0:>3}'
@@ -25,7 +25,7 @@ for i in range(1,11):
     
 for i in range(1, 11):
         for j in range(1, i+1):
-            print('{}x{}={}\t'.format(i, j, i*j), end='')
+            print('{}x{}={}\t'.format(i, j, i*j), end='') #\t - горизонтальная табуляция
         print()
         
 for i in range(1, 11):
@@ -33,10 +33,18 @@ for i in range(1, 11):
             print('{}x{}={}\t'.format(i, j, i*j))
         print()
     
+    
+    
 import random
-#random.randint(A,B)
-#random.randrange(a,b,2)
-#random.random()
+
+A=8
+B=23
+
+random.randint(A,B) #от 8 до 23
+
+random.randrange(A,B,2) #шаг 2 и первое число
+
+random.random()
 
 a=random.randint(1,10)
 print('a',a)
@@ -76,7 +84,7 @@ while c:
 print('Цикл завершен')
 
 a=list('lists')
-print(a)
+print(a) #['l', 'i', 's', 't', 's']
 
 Cars=['BMW','Opel','Ford','Porsche']
 print(Cars)

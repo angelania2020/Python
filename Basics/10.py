@@ -49,7 +49,7 @@ print('end')
 
 sum=0
 n=5
-for i in range(1, n+1):
+for i in range(1, n+1): #ДО 6
     sum += i
 print(sum)
 
@@ -68,10 +68,7 @@ print(1,2,3, sep='', end=' -- ')
 print(4,5,6, sep=' * ', end='.')
 
 
-for i in range(1,101):
-    if i%5==0:
-        print(i)
-        
+                   
 i = 1
 while i < 101:
     if i%5==0:

@@ -1,5 +1,5 @@
-!!!буква ё и shuffle
 schotchik_voprosov=0 #Счётчик вопросов, в начале игры 0
+otgadali=0
 while schotchik_voprosov<10: #Цикл, играем 10 раз, т.к. 10 вопросов
 
     def viktorina(): #Задаем функцию для викторины
@@ -28,8 +28,13 @@ while schotchik_voprosov<10: #Цикл, играем 10 раз, т.к. 10 воп
     while  popitki != 3:
         #Пользоатель вводит свою догадку:
         dogadka = input('Введите букву или слово: ').lower()
+        if dogadka == 'exit':
+            schotchik_voprosov+=10
+            break
         if dogadka == otvet:
-            print('Молодцы!');print();break
+            print('Молодцы!');print()
+            otgadali +=1
+            break
         if dogadka in otvet and dogadka not in otgadannije_bukvi:
             print ('Есть такая буква!')
             otgadannije_bukvi += dogadka
@@ -47,7 +52,9 @@ while schotchik_voprosov<10: #Цикл, играем 10 раз, т.к. 10 воп
             print('Такой буквы нет или неверное слово!')
             popitki += 1
         if podbor_bukv == otvet:
-            print('Вы правильно назвали все буквы!');print();break
+            print('Вы правильно назвали все буквы!');print()
+            otgadali +=1
+            break
      
     if popitki == 3:
         print('Вы не угадали слово! Правильный ответ: {}.'.format(otvet))
@@ -56,4 +63,4 @@ while schotchik_voprosov<10: #Цикл, играем 10 раз, т.к. 10 воп
     schotchik_voprosov+=1 
             
 if schotchik_voprosov==10:
-        print('Конец игры!')
+        print('Конец игры! Вы отгадали {} слов(а).'.format(otgadali))

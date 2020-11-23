@@ -53,7 +53,8 @@ a=['red', 'green', 'blue']
 print(', '.join(a))
 
 b=[1,2,5]
-print(' '.join([str(i) for i in b]))
+print(''.join([str(i) for i in b])) #Делаем из чисел строку
+
 
 #Srez
 numbers=[23,63,72,10,24,98]
@@ -84,7 +85,7 @@ for i in range(0,len(a)): #ot index 0
     if int(a[i])%2==0:
         print(a[i]) #v stolbik
         
-#Vidjorgivajem chjotnije i nechjotbije indexi. Vivod: 2, 8, 0
+#Vidjorgivajem chjotnije i nechjotbije indexi.
 print('Please insert elements of the list using spacebar: ')
 a=input().split()
 print('Even indexes contain:')
@@ -96,7 +97,19 @@ a=input().split()
 print('Odd indexes contain:')
 for i in range(1,len(a),2): 
         print(a[i])
+#Out:
+#1
+#3
 
-a=input().split()
+
+print('Please insert elements of the list using spacebar: ')
+s=input()
+a=[int(s) for s in s.split()]
 print('Odd indexes contain:')
-a[1::2]
+print(a[1::2])
+
+
+print('Please insert elements of the list using spacebar: ')
+s=input().split()
+print('Odd indexes contain:')
+print(s[1::2]) #['1', '3'] list with strings
