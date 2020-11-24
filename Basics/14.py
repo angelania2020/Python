@@ -12,5 +12,5 @@ print('And now closed: ',f.closed)
 with open('text.txt','w',encoding=('utf8')) as s:
     s.write('I like Java!')
 
-# !!! исправить   
+# !!!  
 print('File contents: ',s.read())

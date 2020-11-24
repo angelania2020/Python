@@ -24,6 +24,7 @@ popitki=0
 otgadannije_bukvi = '' #Сначала нет отгаданных букв
 
 while  popitki != 3:
+    podbor_bukv = '' #Для вывода отгаданных и скрытых букв
     #Пользоатель вводит свою догадку:
     dogadka = input('Введите букву или слово: ').lower()
     if dogadka == otvet:
@@ -31,7 +32,6 @@ while  popitki != 3:
     if dogadka in otvet and dogadka not in otgadannije_bukvi:
         print ('Есть такая буква!')
         otgadannije_bukvi += dogadka
-        podbor_bukv = '' #Для вывода отгаданных и скрытых букв
         for bukva_otveta in otvet:
             if bukva_otveta in otgadannije_bukvi:
                 podbor_bukv += bukva_otveta
