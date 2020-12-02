@@ -52,7 +52,7 @@ class Cars:
     def display(self):
         print('Brand: {} \nColor: {} \nYear: {} \nPrice: {} \nMaxSpeed: {}'.format(self.Brand,self.Color,self.Year,self.Price, self.MaxSpeed))
     
-newCar1=Cars(a='Opel', b='Black', c=2020, d=28000, e=200)
+newCar1=Cars(a='Opel', b='Black', c=2020, d=28000, e=200) #object
 newCar2=Cars(a='BMW', b='White', c=2015, d=15000, e=150)
 
 newCar1.display()
