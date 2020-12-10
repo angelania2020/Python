@@ -1,0 +1,3 @@
+Название1;http://https://www.google.ru/
+Название2;http://https://www.google.ru/
+Название3;http://https://www.google.ru/

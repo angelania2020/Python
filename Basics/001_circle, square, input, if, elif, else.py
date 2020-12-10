@@ -157,3 +157,12 @@ elif month == 12 :
 
 else :
     print('\nPlease enter month number between 1-12.')
+    
+    
+print('Введите значение x')
+x=int(input())
+if x>0:
+    y=2*x
+else:
+    y=-2*x
+print(y)
